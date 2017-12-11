@@ -9,3 +9,63 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+
+.logo {
+	position: absolute;
+	top: 45%;
+	animation-delay: 4s;
+	animation-timing-function: ease-out;
+	-webkit-animation-name: zoomo;
+	animation-name: zoomo;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@keyframes zoomo {
+	0% {
+		opacity: 0;
+	}
+
+	30% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.intro {
+	position: absolute;
+	top: 45%;
+	font-size: 32px;
+	color: #61c2d0;
+	opacity: 0;
+	animation-delay: 1s;
+	animation-duration: 3s;
+	animation-name: intro;
+	animation-timing-function: ease-out;
+}
+
+@keyframes intro {
+	0% {
+		opacity: 0;
+	}
+
+	30% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
